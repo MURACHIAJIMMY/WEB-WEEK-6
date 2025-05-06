@@ -1,0 +1,75 @@
+/* style.css */
+body {
+    font-family: 'Comic Sans MS', cursive;
+    background: #f0f9ff;
+    padding: 20px;
+}
+
+.event-section, .gallery-section, .form-section {
+    background: white;
+    padding: 20px;
+    margin: 20px 0;
+    border-radius: 15px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.bouncy {
+    transition: transform 0.2s;
+}
+
+.bouncy:active {
+    transform: scale(1.2);
+}
+
+.hover-zoom {
+    transition: transform 0.3s;
+    margin: 10px;
+}
+
+.hover-zoom:hover {
+    transform: scale(1.1);
+}
+
+.gallery {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+#secretBox {
+    background: #ffeb3b;
+    padding: 10px;
+    margin: 10px;
+    border-radius: 8px;
+}
+
+.hidden {
+    display: none;
+}
+
+.form-group {
+    margin: 15px 0;
+}
+
+input {
+    padding: 10px;
+    border: 2px solid #ddd;
+    border-radius: 5px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.error {
+    color: #ff4444;
+    font-size: 0.9em;
+    height: 20px;
+}
+
+@keyframes spin {
+    from { transform: rotate(0deg); }
+    to { transform: rotate(360deg); }
+}
+
+.spin {
+    animation: spin 1s linear;
+}

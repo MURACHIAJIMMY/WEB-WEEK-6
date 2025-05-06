@@ -1,0 +1,56 @@
+<!-- index.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Playground Party! 🎉</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Welcome to the Interactive Playground! 🥳</h1>
+    </header>
+
+    <!-- Event Handling Section -->
+    <section class="event-section">
+        <h2>Event Zone 🎪</h2>
+        <button id="morphButton" class="bouncy">Click Me! 🦄</button>
+        <div id="keyDisplay">Press any key... ⌨️</div>
+        <div id="secretBox" class="hidden">🎉 You found the secret!</div>
+    </section>
+
+    <!-- Image Gallery -->
+    <section class="gallery-section">
+        <h2>Magic Gallery 🖼️</h2>
+        <div class="gallery">
+            <img src="https://picsum.photos/200/300?1" alt="Art 1" class="hover-zoom">
+            <img src="https://picsum.photos/200/300?2" alt="Art 2" class="hover-zoom">
+            <img src="https://picsum.photos/200/300?3" alt="Art 3" class="hover-zoom">
+        </div>
+        <button id="spinButton">Spin the Images! 🌀</button>
+    </section>
+
+    <!-- Form Validation -->
+    <section class="form-section">
+        <h2>Join the Fun! 📝</h2>
+        <form id="partyForm">
+            <div class="form-group">
+                <input type="text" id="name" placeholder="Your name 🌟" required>
+                <div class="error"></div>
+            </div>
+            <div class="form-group">
+                <input type="email" id="email" placeholder="Email 📧" required>
+                <div class="error"></div>
+            </div>
+            <div class="form-group">
+                <input type="password" id="password" placeholder="Password 🔑" required>
+                <div class="error"></div>
+            </div>
+            <button type="submit">Let's Party! 🎈</button>
+        </form>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>
